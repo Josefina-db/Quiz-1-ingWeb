@@ -1,0 +1,28 @@
+
+$yellow: #FFE800;
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  
+  }
+
+  .example-card {
+    max-width: 400px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+
+  .example-card:hover{
+    box-shadow: -3px 3px 1px $yellow;
+  }
+
+  mat-card-header{
+      padding: 10px;
+  }
+
+.fa-big{
+  font-size: 4em;
+}

@@ -1,0 +1,47 @@
+<form [formGroup]="formulario">
+  <ul>
+    <li>
+      <label>Nombres</label><br />
+      <input formControlName="nombre" type="text" required />
+    </li>
+
+    <li>
+      <label>Apellidos</label><br />
+      <input formControlName="apellido" type="text" required />
+    </li>
+
+    <li class="genero">
+      <label>Género</label><br />
+      <input type="radio" [value]="1" formControlName="genero" />Mujer<br />
+      <input type="radio" [value]="2" formControlName="genero" />Hombre<br />
+      <input type="radio" [value]="3" formControlName="genero" />Otro<br />
+    </li>
+
+    <li>
+      <label for="pais">Pais</label><br />
+      <select id="pais" formControlName="pais" required>
+        <option></option>
+        <option>Chile</option>
+        <option>Ecuador</option>
+        <option>Brasil</option>
+        <option>Mexico</option>
+      </select>
+    </li>
+
+    <li>
+      <label>Ciudad</label><br />
+      <input formControlName="ciudad" type="text" required />
+    </li>
+
+    <li>
+      <div class="botonAdd">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <button href="#" class="btn" (click)="formulario.reset()">Cancelar</button>
+        <!--desabilita el boton si es que no se han rellenado los campos-->
+        <button href="#" class="btn" [disabled]="!formulario.valid" (click)="crear()">crear</button>
+      </div>
+    </li>
+  </ul>
+</form>
+

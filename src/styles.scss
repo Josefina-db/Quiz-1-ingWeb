@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$blue: #1CD3F8;
+$base-font-size: 14px;
+$base-line-height: 1.6em;
+
+html, body { 
+    height: 100%;
+    background: $blue;
+}
+
+body {
+    background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+    color:black;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

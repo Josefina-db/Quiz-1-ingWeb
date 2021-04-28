@@ -1,0 +1,23 @@
+<nav>  
+    <section>       
+        <div class="headerlabel"><mat-icon class="iconheader" aria-hidden="false" aria-label="header icon">person</mat-icon><label>CLIENTES</label></div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <!--Dirige al home o vista princiapal de la pagina-->
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" ><button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>menu</mat-icon>Vista card
+            </button></a>
+             <!--Dirige al home o vista lista de la pagina-->
+            <a [routerLink]="['/lista']" routerLinkActive="router-link-active"> <button mat-icon-button  aria-label="Example icon button with a home icon">
+              <mat-icon>menu</mat-icon>Lista
+            </button></a>
+
+             <!--Dirige al home o vista adicionar de la pagina-->
+            <a [routerLink]="['/adicionar']" routerLinkActive="router-link-active"> <button mat-icon-button aria-label="Example icon button with a menu icon">
+              <mat-icon>plus_one</mat-icon>Adicionar
+            </button></a>
+          </div>
+        </div>
+      </section> 
+           
+</nav>

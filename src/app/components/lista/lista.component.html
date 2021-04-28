@@ -1,0 +1,25 @@
+<div class="container"><table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre Completo</th>
+        <th scope="col">Género</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Ciudad</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of listaU">
+            <td>{{item.nombre}}</td> 
+            <!--Selecciona que imprimir segun el numero de genero-->
+            <td *ngIf="item.genero===1">Mujer</td>
+            <td *ngIf="item.genero===2">Hombre</td>
+            <td *ngIf="item.genero===3">Otro</td>
+            <td>{{item.pais}}</td>
+            <td>{{item.ciudad}}</td>
+        </tr>
+      
+    </tbody>
+  </table>
+  </div>
+
+

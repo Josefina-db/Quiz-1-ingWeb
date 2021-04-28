@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row"  >
+    <!--Muestra solo dos cards por fila-->
+    <mat-card *ngFor="let item of listaClientes" class="example-card col-6"  >
+      <mat-card-header>
+        <!--Selecciona el icono de card segun genero-->
+        <div mat-card-avatar> <i class="fas fa-big" [ngClass]="{'fa-female': item.genero===1, 'fa-male': item.genero===2, 'fa-snowman':item.genero===3}"> </i> </div>
+        <mat-card-title>{{item.nombre}} {{item.apellido}}</mat-card-title>
+        <mat-card-subtitle>{{item.ciudad}}, {{item.pais}}</mat-card-subtitle>
+      </mat-card-header>  
+    </mat-card>  
+  </div>
+</div>
